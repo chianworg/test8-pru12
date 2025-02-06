@@ -49,6 +49,15 @@
       },
       {
         "archetypes": [
+          "corp"
+        ],
+        "display_name": "LBU3",
+        "exists": false,
+        "id": "lbu3",
+        "parent_id": "landingzones"
+      },      
+      {
+        "archetypes": [
           "management"
         ],
         "display_name": "Management",
