@@ -1,0 +1,79 @@
+{
+    "$schema": "https://raw.githubusercontent.com/Azure/Azure-Landing-Zones-Library/main/schemas/architecture_definition.json",
+    "name": "alz",
+    "management_groups": [
+      {
+        "archetypes": [
+          "root"
+        ],
+        "display_name": "Pru New Cloud",
+        "exists": false,
+        "id": "pruncroot",
+        "parent_id": null
+      },
+      {
+        "archetypes": [
+          "platform"
+        ],
+        "display_name": "Platform",
+        "exists": false,
+        "id": "platform",
+        "parent_id": "pruncroot"
+      },
+      {
+        "archetypes": [
+          "landing_zones"
+        ],
+        "display_name": "Landing zones",
+        "exists": false,
+        "id": "landingzones",
+        "parent_id": "pruncroot"
+      },
+      {
+        "archetypes": [
+          "corp"
+        ],
+        "display_name": "LBU1",
+        "exists": false,
+        "id": "lbu1",
+        "parent_id": "landingzones"
+      },
+      {
+        "archetypes": [
+          "corp"
+        ],
+        "display_name": "LBU2",
+        "exists": false,
+        "id": "lbu2",
+        "parent_id": "landingzones"
+      },
+      {
+        "archetypes": [
+          "management"
+        ],
+        "display_name": "Management",
+        "exists": false,
+        "id": "management",
+        "parent_id": "platform"
+      },
+      {
+        "archetypes": [
+          "connectivity"
+        ],
+        "display_name": "Connectivity",
+        "exists": false,
+        "id": "connectivity",
+        "parent_id": "platform"
+      },
+
+      {
+        "archetypes": [
+          "decommissioned"
+        ],
+        "display_name": "Decommissioned",
+        "exists": false,
+        "id": "decommissioned",
+        "parent_id": "pruncroot"
+      }
+    ]
+  }
