@@ -1,0 +1,7 @@
+{
+    "name": "root_override",
+    "base_archetype": "root",
+    "policy_assignments_to_remove": [
+      "Audit-ResourceRGLocation"
+    ]
+}
