@@ -4,7 +4,7 @@
     "management_groups": [
       {
         "archetypes": [
-          "root"
+          "root_override"
         ],
         "display_name": "Pru New Cloud",
         "exists": false,
